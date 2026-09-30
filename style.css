@@ -1331,3 +1331,5 @@ body{font-weight:500}.site-header,.site-footer,.home-slide{font-weight:500}.home
 
 /* Keep the 3D emoji centered behind the opening copy while preserving contrast. */
 .home-hero .hero-copy{z-index:5}.home-hero .hero-copy .lede{position:relative;z-index:6;color:#fff;font-weight:800;line-height:1.55;text-shadow:0 2px 10px #000,0 0 24px #000;max-width:650px}.home-hero .hero-art{z-index:1;opacity:var(--earth-opacity,.24)}.home-hero .hero-emoji-field{z-index:4}.mind-model{opacity:1;filter:drop-shadow(0 10px 0 #73400f) drop-shadow(0 18px 15px #080604d9) drop-shadow(0 0 36px #ff9b3d99)}@media(max-width:700px){.home-hero .hero-copy .lede{font-size:15px;color:#fff;font-weight:800;text-shadow:0 2px 12px #000,0 0 26px #000}.home-hero .hero-art{opacity:var(--earth-opacity,.18)}}
+/* Keep the centered globe transform above the generic reveal-state reset. */
+.motion-ready .home-hero .hero-art.is-visible{transform:translate3d(calc(-50% + var(--earth-x,0px)),-50%,0) scale(var(--earth-scale,1));opacity:var(--earth-opacity,.24)}
